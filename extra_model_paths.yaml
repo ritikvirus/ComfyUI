@@ -3,40 +3,40 @@
 #config for a1111 ui
 #all you have to do is change the base_path to where yours is installed
 a111:
-    base_path: /workspace/
+    base_path: /runpod/
 
     #checkpoints: models/Stable-diffusion
-    #checkpoints: models
+    #checkpoints: models/checkpoints
     #configs: models/Stable-diffusion
-    vae: models
+    vae: models/vae
     loras: |
-         models
-         models
+         models/loras
+         models/LyCORIS
     upscale_models: |
-                  models
-                  models
-                  models
-    embeddings: models
-    hypernetworks: models
-    controlnet: models
+                  models/ESRGAN
+                  models/RealESRGAN
+                  models/SwinIR
+    embeddings: models/embeddings
+    hypernetworks: models/hypernetworks
+    controlnet: models/controlnet
 #    custom_nodes: custom_nodes
-    unet: models
+    unet: models/unet
 comfyui:
-     base_path: /workspace
-#     checkpoints: models
-#     checkpoints: models
-     checkpoints: models
-     clip: models
-     clip_vision: models
-     configs: models
-#     controlnet: models
-#     embeddings: models
-#     loras: models
-#     upscale_models: models
-#     vae: models
+     base_path: /runpod/
+#     checkpoints: models/checkpoints/
+#     checkpoints: models/checkpoints
+     checkpoints: models/checkpoints
+     clip: models/clip/
+     clip_vision: models/clip_vision/
+     configs: configs/
+#     controlnet: models/controlnet/
+#     embeddings: models/embeddings/
+#     loras: models/loras/
+#     upscale_models: models/upscale_models/
+#     vae: models/vae/
 other_ui:
-    base_path: /workspace/
-    checkpoints: custom_nodes
-#    gligen: models
+    base_path: /runpod/
+    checkpoints: models/checkpoints
+#    gligen: models/gligen
     custom_nodes: custom_nodes
 #    checkpoints: models/Stable-diffusion
