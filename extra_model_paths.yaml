@@ -1,0 +1,39 @@
+a111:
+    base_path: /app/ComfyUI/
+
+    #checkpoints: models/Stable-diffusion
+    checkpoints: models/checkpoints
+    #configs: models/Stable-diffusion
+    vae: models/vae
+    loras: |
+         models/loras
+         models/LyCORIS
+    upscale_models: |
+                  models/ESRGAN
+                  models/RealESRGAN
+                  models/SwinIR
+    embeddings: models/embeddings
+    hypernetworks: models/hypernetworks
+    controlnet: models/ControlNet
+    ipadapter: models/ipadapter
+    remgb: models/models/rembg
+#    custom_nodes: custom_nodes
+    unet: models/unet
+
+other_ui:
+    base_path: /app/
+    checkpoints: pre_models/models/checkpoints
+    loras: pre_models/models/Lora
+    controlnet: pre_models/models/ControlNet
+    unet: pre_models/models/unet
+    remgb: pre_models/models/rembg
+    clip: pre_models/models/clip
+    vae: pre_models/models/vae
+    ipadapter: pre_models/models/ipadapter
+    clip_vision: pre_models/models/clip_vision/
+    #onnx: pre_models/models/onnx
+#    gligen: models/gligen
+    custom_nodes: pre_custom_nodes
+    clip: pre_models/models/clip
+    vae: pre_models/models/VAE
+#    checkpoints: models/Stable-diffusion
